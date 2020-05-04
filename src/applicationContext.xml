@@ -9,8 +9,11 @@
 
 
     <!-- Define your beans here -->
-    <bean id="myCoach"
+    <bean id="runCoach"
         class="springdemo.RunningCoach">
+    </bean>
+    <bean id="sensei"
+          class="springdemo.KendoCoach">
     </bean>
 
 

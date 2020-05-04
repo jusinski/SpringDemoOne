@@ -8,7 +8,7 @@ public class HelloSpringApp {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         // get bean from container
-        Coach theCoach = context.getBean("myCoach", Coach.class);
+        Coach theCoach = context.getBean("sensei", Coach.class);
 
         // call mehods on bean
         System.out.println(theCoach.getDailyWorkout());
