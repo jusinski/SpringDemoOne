@@ -6,12 +6,14 @@ public class HelloSpringApp {
     public static void main(String[] args){
         // load conf file
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        
+
         // get bean from container
+        Coach theCoach = context.getBean("myCoach", Coach.class);
 
         // call mehods on bean
+        System.out.println(theCoach.getDailyWorkout());
 
         // close the context
-
+        context.close();
     }
 }
