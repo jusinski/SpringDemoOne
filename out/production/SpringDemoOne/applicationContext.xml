@@ -18,6 +18,7 @@
 
     <bean id="runCoach"
         class="springdemo.RunningCoach">
+<<<<<<< HEAD
         <!-- set up constructor injection -->
         <constructor-arg ref="myFortune" />
     </bean>
@@ -29,6 +30,14 @@
         class="springdemo.SnowboardCoach">
         <constructor-arg ref="myFortune" />
     </bean>
+=======
+    </bean>
+    <bean id="sensei"
+          class="springdemo.KendoCoach">
+          <!-- set up constructor injection -->
+          <constructor-arg ref="myFortune" />
+    </bean>
+>>>>>>> Temp commit
 
 
 
