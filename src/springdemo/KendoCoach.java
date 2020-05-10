@@ -11,7 +11,7 @@ public class KendoCoach implements Coach {
     }
 
     public KendoCoach(){
-        
+
     }
 
     @Override
