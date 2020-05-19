@@ -12,17 +12,10 @@
     <bean id="myFortune"
           class="springdemo.HappyFortuneService">
     </bean>
-    <bean id="runCoach"
-        class="springdemo.RunningCoach">
+    <bean id="mySensei"
+          class="springdemo.KendoCoach"
+          scope="prototype">
         <!-- set up constructor injection -->
-        <constructor-arg ref="myFortune" />
-    </bean>
-    <bean id="sensei"
-          class="springdemo.KendoCoach">
-          <constructor-arg ref="myFortune" />
-    </bean>
-    <bean id="snowCoach"
-        class="springdemo.SnowboardCoach">
         <constructor-arg ref="myFortune" />
     </bean>
 </beans>

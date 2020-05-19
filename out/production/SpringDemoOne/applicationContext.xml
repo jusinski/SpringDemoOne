@@ -7,18 +7,13 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-
     <!-- Define your beans here -->
-
     <!-- Define the dependency -->
-
     <bean id="myFortune"
           class="springdemo.HappyFortuneService">
     </bean>
-
     <bean id="runCoach"
         class="springdemo.RunningCoach">
-<<<<<<< HEAD
         <!-- set up constructor injection -->
         <constructor-arg ref="myFortune" />
     </bean>
@@ -30,18 +25,6 @@
         class="springdemo.SnowboardCoach">
         <constructor-arg ref="myFortune" />
     </bean>
-=======
-    </bean>
-    <bean id="sensei"
-          class="springdemo.KendoCoach">
-          <!-- set up constructor injection -->
-          <constructor-arg ref="myFortune" />
-    </bean>
->>>>>>> Temp commit
-
-
-
-
 </beans>
 
 
