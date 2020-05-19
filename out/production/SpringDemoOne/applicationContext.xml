@@ -11,12 +11,15 @@
     <context:property-placeholder location="classpath:sport.properties" />
 
     <!-- Define your beans here -->
-
     <!-- Define the dependency -->
     <bean id="myFortune"
           class="springdemo.HappyFortuneService">
     </bean>
+
+    <bean id="runCoach"
+
     <bean id="myRunCoach"
+
         class="springdemo.RunningCoach">
         <!-- set up constructor injection -->
         <constructor-arg ref="myFortune" />
@@ -29,6 +32,7 @@
         class="springdemo.SnowboardCoach">
         <constructor-arg ref="myFortune" />
     </bean>
+
     <bean id="myFencingCoach"
     class="springdemo.FencingCoach">
         <!-- set up seter injection-->
@@ -37,7 +41,6 @@
         <property name="emailAddress" value="${my.email}" />
         <property name="team" value="${my.team}" />
     </bean>
-
 </beans>
 
 

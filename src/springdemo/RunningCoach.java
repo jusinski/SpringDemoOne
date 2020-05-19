@@ -22,4 +22,15 @@ public class RunningCoach implements Coach {
         // use fortuneService to get one
         return fortuneService.getFortune();
     }
+
+    // add an init method
+    public void doMyStuff() {
+        System.out.println("RunningCoach: inside method doMyStuff");
+    }
+
+    // add a destroy method
+    public void removeMyStuff(){
+        System.out.println("RunningCoach: inside method removeMyStuff");
+    }
+
 }
